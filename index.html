@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kangana Nayak | Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(to right, #ffffff, #eef3ff);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: #0077ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #0077ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #005fd1;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+      font-size: 18px;
+    }
+
+    .skills-grid,
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #0077ff;
+    }
+
+    .card ul {
+      list-style: none;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .experience {
+      background: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .experience h3 {
+      margin-bottom: 10px;
+    }
+
+    .experience p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .experience ul {
+      margin-left: 20px;
+      color: #555;
+    }
+
+    .project-card h3 {
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style></head>
+<body>  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Kangana.</div><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  </header>  <section class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span>Kangana Nayak</span></h1>
+      <p>Java Developer | Spring Boot | REST API | Hibernate</p><a href="https://github.com/kangnanayak5" class="btn" target="_blank">
+    View GitHub
+  </a>
+</div>
+
+  </section>  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2><p>
+    Passionate Java Developer with hands-on experience in Core Java,
+    Spring Boot, Hibernate, REST APIs, SQL, and backend development.
+    Skilled in debugging, problem-solving, database management, and
+    building scalable web applications.
+  </p>
+</div>
+
+  </section>  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2><div class="skills-grid">
+    <div class="card">
+      <h3>Languages</h3>
+      <ul>
+        <li>Core Java</li>
+        <li>SQL</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Frameworks</h3>
+      <ul>
+        <li>Spring Boot</li>
+        <li>Hibernate</li>
+        <li>REST API</li>
+        <li>Microservices</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Tools & Databases</h3>
+      <ul>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Maven</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </section>  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2><div class="experience">
+    <h3>Java Full Stack Intern</h3>
+    <p>Seeree Tech Services Pvt. Ltd. | Aug 2025 - Mar 2026</p>
+
+    <ul>
+      <li>Developed Java applications using Spring Boot and MySQL.</li>
+      <li>Built REST APIs and backend modules.</li>
+      <li>Worked on debugging and SQL optimization.</li>
+      <li>Collaborated with developers on project development.</li>
+    </ul>
+  </div>
+</div>
+
+  </section>  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2><div class="project-grid">
+    <div class="card project-card">
+      <h3>Learning Management System</h3>
+
+      <p>
+        LMS project developed using Spring Boot, Hibernate, MySQL,
+        HTML, CSS, and Bootstrap.
+      </p>
+
+      <a href="https://github.com/kangnanayak5/LearningManagementSystem.git"
+         class="btn"
+         target="_blank">
+         View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+  </section>  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2><div class="card" style="text-align:center; max-width:600px; margin:auto;">
+    <p><strong>Email:</strong> kangananayak250@gmail.com</p>
+    <p><strong>Phone:</strong> 8895230065</p>
+    <p><strong>Location:</strong> Bhubaneswar, Odisha</p>
+  </div>
+</div>
+
+  </section>  <footer>
+    <p>© 2026 Kangana Nayak</p>
+    <p>Java Developer Portfolio</p>
+  </footer></body>
+</html>
