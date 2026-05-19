@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kangana Nayak | Java Developer</title>
+  <title>Kangana Nayak </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
@@ -85,6 +85,36 @@
       color: #555;
       margin-bottom: 30px;
     }
+   .profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+/* hover Zoom effect when clicked */
+
+    .profile-img:hover{
+        transform: scale(1.8);
+
+    }
+    .resume-link {
+  text-decoration: none;
+  color: #0077ff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s; 
+  }
+
+ .resume-link:hover {
+  color: #005fd1;
+  text-decoration: underline;
+ }
 
     .btn {
       display: inline-block;
@@ -225,18 +255,27 @@
   </header>  <section class="hero">
     <div class="container">
       <h1>Hi, I'm <span>Kangana Nayak</span></h1>
-      <p>Java Developer | Spring Boot | REST API | Hibernate</p><a href="https://github.com/kangnanayak5" class="btn" target="_blank">
-    View GitHub
-  </a>
+      <p>Developer | Java Fullstack </p>
+     <img src="profile.jpeg"
+     alt="Kangana Nayak"
+     class="profile-img"
+     id="profileImage">
+      <a href="https://github.com/kangnanayak5" class="btn" target="_blank">
+   View GitHub
+</a>
+
+<br><br>
+
+<a href="KANGANA NAYAK.pdf " download class="resume-link">
+   Download My Resume
+</a>
+
 </div>
 
   </section>  <section id="about" class="about">
     <div class="container">
       <h2 class="section-title">About Me</h2><p>
-    Passionate Java Developer with hands-on experience in Core Java,
-    Spring Boot, Hibernate, REST APIs, SQL, and backend development.
-    Skilled in debugging, problem-solving, database management, and
-    building scalable web applications.
+ Passionate and detail-oriented Developer with hands-on experience in Core Java, Advanced Java concepts, Spring Boot, Hibernate, REST APIs, and SQL. Skilled in developing scalable backend applications and microservices-based solutions with strong knowledge of object-oriented programming, exception handling, collections, multithreading, JDBC, and database management. Experienced in debugging, problem-solving, API integration, and optimizing application performance. Capable of building clean, maintainable, and efficient applications while collaborating effectively within development teams.
   </p>
 </div>
 
@@ -278,13 +317,17 @@
     <div class="container">
       <h2 class="section-title">Experience</h2><div class="experience">
     <h3>Java Full Stack Intern</h3>
-    <p>Seeree Tech Services Pvt. Ltd. | Aug 2025 - Mar 2026</p>
+    <p>Seeree Tech Services Pvt. Ltd. </p>
 
     <ul>
-      <li>Developed Java applications using Spring Boot and MySQL.</li>
-      <li>Built REST APIs and backend modules.</li>
-      <li>Worked on debugging and SQL optimization.</li>
-      <li>Collaborated with developers on project development.</li>
+     
+      <li><strong>Project Description:</strong></li>
+      <li>Developed a web-based Learning Management System to manage courses, assignments, and student records.</li>
+      <li>Built backend services using Spring Boot, Hibernate, REST APIs, and MySQL.</li>
+      <li>Designed responsive frontend interfaces using HTML5, CSS3, and Bootstrap.</li>
+      <li>Implemented CRUD operations, authentication modules, and database integration.</li>
+      <li>Improved application performance through optimized SQL queries and modular architecture.</li>
+      <li>Applied debugging and problem-solving skills to enhance application stability and user experience.</li>
     </ul>
   </div>
 </div>
@@ -320,6 +363,16 @@
 
   </section>  <footer>
     <p>© 2026 Kangana Nayak</p>
-    <p>Java Developer Portfolio</p>
-  </footer></body>
+    <p>Developer Portfolio</p>
+  </footer>
+
+  <script>
+  const image = document.getElementById("profileImage");
+
+  image.addEventListener("click", () => {
+    image.classList.toggle("zoomed");
+  });
+</script>
+
+</body>
 </html>
