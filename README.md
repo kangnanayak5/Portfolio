@@ -17,4 +17,4 @@
 
 ### About Me
 - 💻 I am looking forward to work as a Full Stack Developer
-- 📫 Reach me at: kangananayak@gmail.com
+- 📫 Reach me at: kangananayak250@gmail.com
